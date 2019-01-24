@@ -17,7 +17,7 @@ body {
     font-weight: bold;
 }
 
-H1, H2, H3, H4, H6 {
+H1, H2, H3, H4 {
     font-family: "opensans-bold", sans-serif;
     text-transform: uppercase;
 }
@@ -132,13 +132,13 @@ h2, h3, h4 {
 }
 
 
-h6 {
+.wrapper_one h3, .wrapper_two h3 {
     position: relative;
     color: #c1c1c1;
 }
 
 
-h6::before {
+.wrapper_one h3::before, .wrapper_two h3::before {
     display: block;
     position: absolute;
     width: 100%;
@@ -148,7 +148,7 @@ h6::before {
 }
 
 
-h6::after {
+.wrapper_one h3::after, .wrapper_two h3::after {
     display: block;
     position: absolute;
     content: "";
@@ -157,22 +157,22 @@ h6::after {
 }
 
 
-.paragraph_two h6::before, .paragraph_five h6::before {
+.paragraph_two h3::before, .paragraph_five h3::before {
     content: "02";
 }
 
 
-.paragraph_free h6::before, .paragraph_six h6::before {
+.paragraph_free h3::before, .paragraph_six h3::before {
     content: "03";
 }
 
 
-.paragraph_six h6::before {
+.paragraph_six h3::before {
     color: #5e42b0;
 }
 
 
-.paragraph_free h6::after, .paragraph_six h6::after {
+.paragraph_free h3::after, .paragraph_six h3::after {
     background-color: #ffffff;
 }
 
@@ -259,6 +259,7 @@ h5 {
 
 @media (min-width: 961px) {
 
+
     header::before {
         background-image: url("images/football_1920.jpg");
     }
@@ -270,25 +271,27 @@ h5 {
     .logo {
         width: 191px;
         height: auto;
-        margin-top: 43px;
+        margin-top: 45px;
     }
 
 
     h1 {
         font-size: 90px;
         line-height: 0.75;
-        margin: 296px 190px 314px 190px;
+        letter-spacing: 4px;
+        margin: 290px 190px 314px 188px;
     }
 
 
     .headline_bottom {
         position: absolute;
         margin-top: 26px;
-        padding-left: 451px;
+        padding-left: 448px;
     }
 
     .app_store, .google_play {
         margin-bottom: 110px;
+        letter-spacing: 1px;
     }
 
 
@@ -298,34 +301,34 @@ h5 {
 
 
     .app_icon {
-        width: 40px;
+        width: 50px;
         height: 50px;
-        margin: 0 26px 0 38px;
+        margin: 0 21px 0 30px;
     }
 
 
     .google_icon {
-        width: 41px;
-        height: 48px;
-        margin: 0 29px 0 57px;
+        width: 50px;
+        height: 50px;
+        margin: 0 22px 0 50px;
     }
 
 
     .wrapper_one, .wrapper_two {
         max-width: 37%;
         min-height: auto;
-        padding: 59px 0 59px 0;
+        padding: 43px 0 59px 0;
     }
 
 
     .wrapper_one, .athlets {
         margin-left: auto;
-        margin-right: 190px;
+        margin-right: 200px;
     }
 
 
     .wrapper_two, .players {
-        margin-left: 190px;
+        margin-left: 200px;
         margin-right: auto;
     }
 
@@ -333,7 +336,8 @@ h5 {
     .athlets, .players {
         max-width: 37%;
         min-height: auto;
-        padding: 114px 0 50px 0;
+        padding: 105px 0 50px 0;
+
     }
 
 
@@ -343,14 +347,15 @@ h5 {
     }
 
 
-    h6 {
+    .wrapper_one h3, .wrapper_two h3 {
         font-size: 36px;
         line-height: 1;
-        margin: 0 0 30px 33px;
+        letter-spacing: 2px;
+        margin: 0 0 23px 30px;
     }
 
 
-    h6::before {
+    .wrapper_one h3::before, .wrapper_two h3::before {
         top: 2px;
         right: 30px;
         font-size: 18px;
@@ -358,7 +363,7 @@ h5 {
     }
 
 
-    h6::after {
+    .wrapper_one h3::after, .wrapper_two h3::after {
         bottom: 5px;
         left: -30px;
         width: 20px;
@@ -369,21 +374,22 @@ h5 {
     .advantage {
         font-size: 20px;
         line-height: 1.4;
+        letter-spacing: 1px;
         margin: 0 0;
     }
 
 
     .footballer {
         left: 50%;
-        margin-left: -550px;
-        margin-top: 30px;
+        margin-left: -565px;
+        margin-top: 28px;
     }
 
 
     .backetballer {
         left: 100%;
-        margin-left: -1100px;
-        margin-top: 30px;
+        margin-left: -1114px;
+        margin-top: 27px;
     }
 
     .pluses {
@@ -547,19 +553,21 @@ h5 {
     h1 {
         font-size: 64px;
         line-height: 0.75;
-        margin: 178px 90px 465px 90px;
+        letter-spacing: 3px;
+        margin: 178px 79px 467px 85px;
     }
 
     .headline_bottom {
         position: absolute;
-        line-height: 1;
-        margin-top: 31px;
+        line-height: 1.2;
+        margin-top: 16px;
         padding-left: 108px;
     }
 
 
     .app_store, .google_play {
         margin-bottom: 90px;
+        letter-spacing: 1px;
     }
 
 
@@ -569,23 +577,23 @@ h5 {
 
 
     .app_icon {
-        width: 36px;
-        height: 43px;
-        margin: 0 27px 0 41px;
+        width: 45px;
+        height: 45px;
+        margin: 0 23px 0 36px;
     }
 
 
     .google_icon {
-        width: 41px;
+        width: 45px;
         height: 45px;
-        margin: 0 28px 0 57px;
+        margin: 0 25px 0 55px;
     }
 
 
     .wrapper_one, .wrapper_two {
-        max-width: 55%;
+        max-width: 58%;
         min-height: auto;
-        padding: 30px 0 38px 0;
+        padding: 32px 0 35px 0;
     }
 
 
@@ -614,14 +622,15 @@ h5 {
     }
 
 
-    h6 {
+    .wrapper_one h3, .wrapper_two h3 {
         font-size: 32px;
         line-height: 1;
-        margin: 0 0 28px 32px;
+        letter-spacing: 2px;
+        margin: 0 0 20px 32px;
     }
 
 
-    h6::before {
+    .wrapper_one h3::before, .wrapper_two h3::before {
         top: 0;
         right: 30px;
         font-size: 18px;
@@ -629,7 +638,7 @@ h5 {
     }
 
 
-    h6::after {
+    .wrapper_one h3::after, .wrapper_two h3::after {
         bottom: 5px;
         left: -30px;
         width: 20px;
@@ -639,15 +648,17 @@ h5 {
 
     .advantage {
         font-size: 16px;
-        line-height: 1.7;
-        margin: 0 0;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        margin: 0 0 0 2px;
+
     }
 
 
     .footballer {
         left: 50%;
-        margin-left: -550px;
-        margin-top: 90px;
+        margin-left: -545px;
+        margin-top: 95px;
     }
 
 
@@ -775,6 +786,7 @@ h5 {
 
 @media (max-width: 640px) {
 
+
     header::before {
         background-image: url("images/football_767.jpg");
     }
@@ -786,22 +798,24 @@ h5 {
     .logo {
         width: 133px;
         height: auto;
-        margin-top: 31px;
+        margin-top: 33px;
     }
 
 
     h1 {
         font-size: 28px;
         line-height: 0.75;
-        margin: 135px 20px 174px 20px;
+        letter-spacing: 1px;
+        margin: 132px 20px 174px 20px;
 
     }
 
     .headline_bottom {
         position: absolute;
-        margin-top: 30px;
-        padding-left: 46px;
-        line-height: 1;
+        margin-top: 24px;
+        padding-left: 43px;
+        line-height: 1.2;
+        letter-spacing: 1px;
     }
 
     .block_button {
@@ -827,16 +841,16 @@ h5 {
 
 
     .app_icon {
-        width: 20px;
+        width: 25px;
         height: 24px;
-        margin: 0 9px 0 82px;
+        margin: 0 7px 0 79px;
     }
 
 
     .google_icon {
-        width: 22px;
+        width: 25px;
         height: 24px;
-        margin: 0 7px 0 82px;
+        margin: 0 7px 0 80px;
     }
 
     .paragraph_one, .paragraph_four {
@@ -847,12 +861,12 @@ h5 {
     .wrapper_one, .wrapper_two {
         max-width: 85%;
         min-height: auto;
-        padding: 60px 0 53px 0;
+        padding: 64px 0 53px 0;
     }
 
 
     .wrapper_one, .athlets, .wrapper_two, .players {
-        margin-left: 21px;
+        margin-left: 20px;
         margin-right: auto;
     }
 
@@ -860,7 +874,7 @@ h5 {
     .athlets, .players {
         max-width: 86%;
         min-height: auto;
-        padding: 25px 0 245px 0;
+        padding: 17px 0 245px 0;
     }
 
 
@@ -871,24 +885,25 @@ h5 {
     }
 
 
-    h6 {
+    .wrapper_one h3, .wrapper_two h3 {
         max-width: 78%;
         font-size: 23px;
         line-height: 1;
-        margin: 0 0 27px 26px;
+        letter-spacing: 1px;
+        margin: 0 0 23px 26px;
     }
 
 
-    h6::before {
-        top: 0;
+    .wrapper_one h3::before, .wrapper_two h3::before {
+        top: 2px;
         right: 25px;
         font-size: 14px;
         line-height: 1;
     }
 
 
-    h6::after {
-        bottom: 3px;
+    .wrapper_one h3::after, .wrapper_two h3::after {
+        bottom: 2px;
         left: -25px;
         width: 15px;
         height: 4px;
@@ -897,14 +912,14 @@ h5 {
 
     .advantage {
         font-size: 15px;
-        line-height: 1.3;
+        line-height: 1.2;
         margin: 0 0;
     }
 
 
     .footballer {
         left: 50%;
-        margin-left: -86px;
+        margin-left: -90px;
         margin-top: 80px;
     }
 
@@ -912,7 +927,7 @@ h5 {
     .backetballer {
         left: 50%;
         margin-left: -150px;
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     .wrapper_be_active, .wrapper_contact, .wrapper_work {
