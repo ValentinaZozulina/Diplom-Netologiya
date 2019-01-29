@@ -414,7 +414,7 @@ h5 {
 
     .pluses img {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 731px;
     }
 
 
@@ -434,24 +434,25 @@ h5 {
 
 
     .be_active h3, .work_it h3, .find_contact h3 {
-        font-size: 80px;
         line-height: 0.75;
+        top: 15vw;
     }
 
     .be_active h3, .work_it h3 {
-        padding: 176px 0 80px 130px;
+        padding: 260px 0 115px 120px;
     }
 
 
     .find_contact h3 {
-        padding: 176px 130px 80px 192px;
+        padding: 260px 130px 115px 192px;
     }
 
 
     .be_active p, .work_it p, .find_contact p {
         font-size: 24px;
         line-height: 1.2;
-        width: 61%;
+        letter-spacing: 1px;
+        width: 66%;
         margin: 0 0;
     }
 
@@ -471,7 +472,7 @@ h5 {
         width: 168px;
         height: 156px;
         font: 700 24px/1.2 opensans, sans-serif;
-        top: 11vw;
+        top: 15vw;
         left: 50%;
         margin: -78px 0 0 -84px;
     }
@@ -511,6 +512,7 @@ h5 {
     h4 {
         font-size: 80px;
         line-height: 0.7;
+        letter-spacing: 4px;
     }
 
 
