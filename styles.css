@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "opensans-regular", "opensans-bold", sans-serif;
 }
 
 @font-face {
