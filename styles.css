@@ -1,37 +1,35 @@
 @font-face {
-    font-family: opensans-regular;
-    src: url("fonts/opensans-regular.ttf");
-    src: url("fonts/opensans-regular.ttf") format("truetype"),
-         url("fonts/opensans-regular.woff") format("woff"),
-         url("fonts/opensans-regular.woff2") format("woff2");
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Regular.ttf");
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("fonts/OpenSans-Regular.woff") format("woff"),
+    url("fonts/OpenSans-Regular.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face{
-    font-family: opensans-bold;
-    src: url("fonts/opensans-bold.ttf");
-    src: url("fonts/opensans-bold.ttf") format("truetype"),
-         url("fonts/opensans-bold.woff") format("woff"),
-         url("fonts/opensans-bold.woff2") format("woff2");
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Bold.ttf");
+    src: url("fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("fonts/OpenSans-Bold.woff") format("woff"),
+    url("fonts/OpenSans-Bold.woff2") format("woff2");
     font-style: normal;
     font-weight: bold;
 }
 
 body {
     margin: 0;
-    padding: 0;
-    font-family: opensans-regular,  sans-serif;
+    font-family: OpenSans, sans-serif;
 }
 
-
 H1, H2, H3, H4 {
-    font-family: opensans-bold, sans-serif;
     text-transform: uppercase;
 }
 
-H5, p {
+H5 {
     font-family: opensans-regular, sans-serif;
+    font-weight: 400;
 }
 
 header, footer {
